@@ -28,12 +28,11 @@ body {
 header {
     width: 100%;
     background-color: #0d2f20;
-    background: url(../img/hd-bg.jpg) no-repeat center top;
+    background: url(../img/header/hd-bg.jpg) no-repeat center top;
     background-position: center center;
     color: #fff;
     vertical-align: middle;
     max-height: 855px;
-    background-size: 100%;
     background-size: cover;
 }
 .hd-wrapper-сеnter {
@@ -43,7 +42,7 @@ header {
 .hd-logo {
     float: left;
 }
-.hd-logo-img {
+.hd-logo img {
     width: 217px;
 }
 .hd-nav{
@@ -135,7 +134,6 @@ ul.hd-menu li a:focus {
     font-size: 22px;
     line-height: 16px;
     color: #34c383;
-    cursor: pointer;
 }
 .ic-center a:hover,
 .ic-center a:focus {
@@ -202,11 +200,11 @@ ul.hd-menu li a:focus {
     margin: 0 auto;
     margin-bottom: 14px;
 }
-.bnf-singature {
+.bnf-item span {
     font-size: 26px;
     font-weight: 600;
 }
-.bnf-subtext {
+.bnf-item p {
     line-height: 30px;
     font-size: 20px;
 }
@@ -247,13 +245,13 @@ button.faq-accordion:last-child {
     border-bottom: none;
 }
 button.faq-accordion::after {
-    content: url(../img/faq-arrow-down.png);
+    content: url(../img/faq/faq-arrow-down.png);
     position: absolute;
     top: 28px;
     right: 30px;
 }
 button.faq-accordion.active::after {
-    content: url(../img/faq-arrow-up.png);
+    content: url(../img/faq/faq-arrow-up.png);
 }
 div.faq-panel {
     display: none;
@@ -281,13 +279,13 @@ footer {
 .copyright {
     float: left;
 }
-.ft-nav {
+.ft-menu {
     float: right;
 }
-ul.ft-menu li {
+.ft-menu ul li {
     display: inline-block;
 }
-ul.ft-menu li a {
+.ft-menu ul li a {
     padding-left: 20px;
     text-align: center;
     text-decoration: none;
@@ -295,3 +293,274 @@ ul.ft-menu li a {
 }
 /*end footer*/
 /*end main css*/
+/*media*/
+@media screen and (max-width:960px) {
+    .hd-wrapper-text {
+        margin-top: 184px;
+        margin-bottom: 38px;
+    }
+    .hd-mobile {
+        margin-top: 80px;
+    }
+    .hd-wrapper-text h2 {
+        font-size: 60px;
+        line-height: 60px;
+    }
+    .improve-customer {
+        padding: 280px 66px 120px 52px;
+    }
+    .ic-center h2 {
+        line-height: 60px;
+        font-size: 60px;
+    }
+    .ic-center a {
+        margin: 40px 0 66px;
+    }
+    .ic-notification .wrapper-img {
+        width: 40%;
+        padding: 0px;
+    }
+    .ic-notification p {
+        width: 60%;
+    }
+    .ic-helps .wrapper-img {
+        padding-left: 21px;
+    }
+    .ic-helps .wrapper-img {
+        width: 40%;
+    }
+    .ic-helps p {
+        width: 60%;
+        padding-right: 0px;
+        padding-left: 85px;
+    }
+    .benefits h2 {
+        margin-bottom: 30px;
+        font-size: 60px;
+    }
+    .bnf-item {
+        width: 50%;
+        padding: 30px 80px;
+    }
+    .faq {
+        padding: 126px 110px;
+    }
+}
+@media screen and (max-width:890px) {
+    header {
+        min-height: 1182px;
+    }
+    ul.hd-menu li {
+        display: none;
+    }
+    .icon {
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+    ul.hd-menu.responsive {
+        position: relative;
+        top: 34px;
+        right: 0px;
+    }
+    ul.hd-menu.responsive li {
+        display: inline;
+    }
+    ul.hd-menu.responsive li a {
+        display: block;
+        text-align: left;
+    }
+    ul.hd-menu li a.active {
+        border: none;
+    }
+    .hd-wrapper-text {
+        width: 100%;
+    }
+    ul.hd-menu li a:hover,
+    ul.hd-menu li a:focus {
+        box-shadow: none;
+    }
+    .hd-wrapper-text {
+        margin-top: 60px;
+        margin-bottom: 68px;
+    }
+    .hd-wrapper-text h2 {
+        margin-bottom: 40px;
+    }
+    .hd-mobile {
+        float: none;
+        width: 100%;
+        margin-top: 0px;
+        text-align: center;
+    }
+    .hd-wrapper-a {
+        margin-top: 42px;
+        text-align: center;
+    }
+    .improve-customer {
+        padding: 400px 72px 100px;
+    }
+    .ic-notification p,
+    .ic-notification .wrapper-img,
+    .ic-helps .wrapper-img,
+    .ic-helps p {
+        width: 100%;
+    }
+    .ic-notification p {
+        margin-top: 62px;
+        margin-bottom: 30px;
+    }
+    .ic-notification .wrapper-img {
+        text-align: center;
+    }
+    .ic-helps p {
+        margin-top: 100px;
+        padding-left: 0px;
+        padding-right: 38px;
+    }
+    .bnf-item {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+    .faq {
+        padding: 77px 20px;
+    }
+    .faq h2 {
+        margin-bottom: 40px;
+    }
+    button.faq-accordion {
+        padding-left: 20px;
+        line-height: 30px;
+    }
+    footer {
+        padding-left: 36px;
+        padding-right: 36px;
+    }
+    .ft-menu {
+        width: 100%;
+        float: none;
+    }
+    .ft-menu ul {
+        margin:0;
+        padding:0;
+        text-align: center;
+    }
+    .ft-menu ul li a {
+        display: block;
+        padding: 6px 20px;
+    }
+    .copyright {
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width:480px) {
+    .hd-logo img {
+        width: 170px;
+    } 
+    .hd-wrapper-сеnter {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .hd-wrapper-text {
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+    .hd-wrapper-text h2 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+    .hd-wrapper-text p {
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .hd-mobile img {
+        width: 280px;
+    }
+    header {
+        min-height: 890px;
+    }
+    .icon {
+        right: 10px;
+    }
+    ul.hd-menu.responsive {
+        top: 30px;
+    }
+    .hd-wrapper-a a:nth-child(1) {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .improve-customer {
+        padding: 426px 3px 90px;
+    }
+    .ic-center h2 {
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .ic-center a {
+        padding-left: 21px;
+        padding-right: 46px;
+    }
+    .ic-arrow {
+        right: 15px;
+    }
+    .ic-notification p {
+        margin-top: 34px;
+        padding: 0 46px 26px 20px;
+        line-height: 30px;
+    }
+    .ic-notification img {
+        width: 300px;
+    }
+    .ic-helps p {
+        padding: 20px 38px 26px 20px;
+        line-height: 30px;
+    }
+    .ic-helps img {
+        width: 290px;
+    }
+    .ic-helps .wrapper-img {
+        padding: 0;
+    }
+    .ic-helps .wrapper-img {
+        text-align: center;
+    }
+    .benefits h2 {
+        font-size: 36px;
+    }
+    .benefits {
+        padding: 46px 22px 30px;
+    }
+    .bnf-item {
+        width: 100%;
+    }
+    button.faq-accordion {
+        padding: 20px 42px 20px 16px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .faq h2 {
+        font-size: 36px;
+    }
+    .faq {
+        padding: 64px 10px;
+    }
+    button.faq-accordion::after {
+        right: 16px;
+    }
+    div.faq-panel {
+        padding: 22px 16px;
+        font-size: 15px;
+        line-height: 20px;
+    }
+    footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .copyright {
+        padding-top: 42px;
+    }
+}
+/*end media*/
